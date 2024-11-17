@@ -1,0 +1,21 @@
+{% load static %} {% include 'home/base.html' %}
+<head>
+  <link rel="stylesheet" href="{% static 'facts/facts.css' %}" />
+</head>
+{% block content %}
+<div class="content-container">
+  <p class="fact">Did you know that, {{fact}}</p>
+  <div class="buttons">
+    <a href="{% url 'facts:dog_facts' %}" class="another-fact-button"
+      >I want another fact</a
+    >
+    <a href="{% url 'home:home' %}" class="go-back-home-button"
+      >I want to go back</a
+    >
+  </div>
+  <p>
+    I learned a lot of things i didn't know before while doing this, i hope you
+    are learning things you didn't know before thanks to this website
+  </p>
+</div>
+{% endblock %}

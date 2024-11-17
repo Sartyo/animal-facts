@@ -1,0 +1,23 @@
+{% include 'home/base.html' %} {% load static %}
+<head>
+  <link rel="stylesheet" href="{% static 'home/home.css' %}" />
+</head>
+{% block content %}
+<div class="content-container">
+  <p class="welcome-message-text">
+    Welcome, in this website you can learn a lot of interesting and fun facts
+    about cats and dogs, just pick one of the cards
+  </p>
+  <p class="welcome-message-text">Have fun!</p>
+  <div class="cards-container">
+    <a class="facts-card" href="{% url 'facts:dog_facts' %}">
+      <img src="{% static 'home/dog card icon.png' %}" class="card-icon" />
+      <p class="card-text">Learn about dogs</p>
+    </a>
+    <a class="facts-card" href="{% url 'facts:cat_facts' %}">
+      <img src="{% static 'home/cat card icon.png' %}" class="card-icon" />
+      <p class="card-text">Learn about cats</p>
+    </a>
+  </div>
+</div>
+{% endblock content %}

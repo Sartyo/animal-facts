@@ -1,0 +1,44 @@
+.content-container {
+    padding-top: 10vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.welcome-message-text {
+    font-size: 24px;
+    text-align: center;
+}
+
+.cards-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.facts-card {
+    height: 45vh;
+    width: 25%;
+    border-radius: 25px;
+    border: solid 1px #ddd;
+    box-shadow: 1px 0 5px #aaa;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.3s ease-in-out;
+}
+
+.facts-card:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.card-icon {
+    padding-top: 10%;
+    width: 70%;
+    height: 70%;
+}
+
+.card-text {
+    text-align: center;
+}
