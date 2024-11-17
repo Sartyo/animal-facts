@@ -1,0 +1,63 @@
+.content-container {
+    padding-top: 10vh;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10vh;
+}
+
+.fact {
+    text-align: center;
+    align-self: center;
+    font-size: 32px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.another-fact-button {
+    border: solid 1px #ddd;
+    border-radius: 25px;
+    height: 8vh;
+    line-height: 8vh;
+    vertical-align: middle;
+    text-decoration: none;
+    background-color: #5c8ad1;
+    width: 15%;
+    text-align: center;
+    color: black;
+    transition: 0.3s ease-in-out;
+    box-shadow: 1px 0 5px #aaa;
+}
+
+.another-fact-button:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.go-back-home-button {
+    border: solid 1px #ddd;
+    border-radius: 25px;
+    height: 8vh;
+    line-height: 8vh;
+    vertical-align: middle;
+    text-decoration: none;
+    width: 15%;
+    text-align: center;
+    color: black;
+    background-color: white;
+    transition: 0.3s ease-in-out;
+    box-shadow: 1px 0 5px #aaa;
+}
+
+.go-back-home-button:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
